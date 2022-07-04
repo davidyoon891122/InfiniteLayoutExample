@@ -7,14 +7,15 @@
 
 import UIKit
 import SnapKit
+import InfiniteLayout
 
 class ViewController: UIViewController {
-    private lazy var collectionView: UICollectionView = {
+    private lazy var collectionView: InfiniteCollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 16.0
+        layout.minimumLineSpacing = 16
 
-        let collectionView = UICollectionView(
+        let collectionView = InfiniteCollectionView(
             frame: .zero,
             collectionViewLayout: layout
         )
@@ -25,7 +26,7 @@ class ViewController: UIViewController {
             UICollectionViewCell.self,
             forCellWithReuseIdentifier: "cell"
         )
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 16.0, bottom: 0, right: 0)
+        collectionView.isPagingEnabled = true
 
         return collectionView
     }()
@@ -83,7 +84,7 @@ private extension ViewController {
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
-            $0.height.equalTo(300.0)
+            $0.height.equalTo(150.0)
         }
     }
 }

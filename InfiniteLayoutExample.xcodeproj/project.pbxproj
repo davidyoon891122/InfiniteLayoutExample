@@ -17,6 +17,8 @@
 		AD4EF7252872B84F000F28FD /* InfiniteLayoutExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EF7242872B84F000F28FD /* InfiniteLayoutExampleUITestsLaunchTests.swift */; };
 		AD4EF7332872B9A3000F28FD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD4EF7322872B9A3000F28FD /* SnapKit */; };
 		AD4EF7362872BA46000F28FD /* InfiniteLayout in Frameworks */ = {isa = PBXBuildFile; productRef = AD4EF7352872BA46000F28FD /* InfiniteLayout */; };
+		AD4EF7382872C0CC000F28FD /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EF7372872C0CC000F28FD /* TestCollectionViewCell.swift */; };
+		AD4EF73A2872C27D000F28FD /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EF7392872C27D000F28FD /* NewsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		AD4EF71E2872B84F000F28FD /* InfiniteLayoutExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteLayoutExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4EF7222872B84F000F28FD /* InfiniteLayoutExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteLayoutExampleUITests.swift; sourceTree = "<group>"; };
 		AD4EF7242872B84F000F28FD /* InfiniteLayoutExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteLayoutExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD4EF7372872C0CC000F28FD /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD4EF7392872C27D000F28FD /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +108,11 @@
 				AD4EF7012872B84C000F28FD /* AppDelegate.swift */,
 				AD4EF7032872B84C000F28FD /* SceneDelegate.swift */,
 				AD4EF7052872B84C000F28FD /* ViewController.swift */,
+				AD4EF7372872C0CC000F28FD /* TestCollectionViewCell.swift */,
 				AD4EF70A2872B84F000F28FD /* Assets.xcassets */,
 				AD4EF70C2872B84F000F28FD /* LaunchScreen.storyboard */,
 				AD4EF70F2872B84F000F28FD /* Info.plist */,
+				AD4EF7392872C27D000F28FD /* NewsModel.swift */,
 			);
 			path = InfiniteLayoutExample;
 			sourceTree = "<group>";
@@ -268,7 +274,9 @@
 			files = (
 				AD4EF7062872B84C000F28FD /* ViewController.swift in Sources */,
 				AD4EF7022872B84C000F28FD /* AppDelegate.swift in Sources */,
+				AD4EF7382872C0CC000F28FD /* TestCollectionViewCell.swift in Sources */,
 				AD4EF7042872B84C000F28FD /* SceneDelegate.swift in Sources */,
+				AD4EF73A2872C27D000F28FD /* NewsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

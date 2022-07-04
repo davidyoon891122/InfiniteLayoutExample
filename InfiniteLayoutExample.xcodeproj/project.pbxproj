@@ -15,6 +15,8 @@
 		AD4EF7192872B84F000F28FD /* InfiniteLayoutExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EF7182872B84F000F28FD /* InfiniteLayoutExampleTests.swift */; };
 		AD4EF7232872B84F000F28FD /* InfiniteLayoutExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EF7222872B84F000F28FD /* InfiniteLayoutExampleUITests.swift */; };
 		AD4EF7252872B84F000F28FD /* InfiniteLayoutExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EF7242872B84F000F28FD /* InfiniteLayoutExampleUITestsLaunchTests.swift */; };
+		AD4EF7332872B9A3000F28FD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD4EF7322872B9A3000F28FD /* SnapKit */; };
+		AD4EF7362872BA46000F28FD /* InfiniteLayout in Frameworks */ = {isa = PBXBuildFile; productRef = AD4EF7352872BA46000F28FD /* InfiniteLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4EF7362872BA46000F28FD /* InfiniteLayout in Frameworks */,
+				AD4EF7332872B9A3000F28FD /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +144,10 @@
 			dependencies = (
 			);
 			name = InfiniteLayoutExample;
+			packageProductDependencies = (
+				AD4EF7322872B9A3000F28FD /* SnapKit */,
+				AD4EF7352872BA46000F28FD /* InfiniteLayout */,
+			);
 			productName = InfiniteLayoutExample;
 			productReference = AD4EF6FE2872B84C000F28FD /* InfiniteLayoutExample.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +220,10 @@
 				Base,
 			);
 			mainGroup = AD4EF6F52872B84C000F28FD;
+			packageReferences = (
+				AD4EF7312872B9A3000F28FD /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AD4EF7342872BA46000F28FD /* XCRemoteSwiftPackageReference "InfiniteLayout" */,
+			);
 			productRefGroup = AD4EF6FF2872B84C000F28FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -592,6 +604,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD4EF7312872B9A3000F28FD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		AD4EF7342872BA46000F28FD /* XCRemoteSwiftPackageReference "InfiniteLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/arnauddorgans/InfiniteLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD4EF7322872B9A3000F28FD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4EF7312872B9A3000F28FD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		AD4EF7352872BA46000F28FD /* InfiniteLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4EF7342872BA46000F28FD /* XCRemoteSwiftPackageReference "InfiniteLayout" */;
+			productName = InfiniteLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD4EF6F62872B84C000F28FD /* Project object */;
 }
